@@ -83,7 +83,7 @@ h1, h2, h3 { line-height: 1.2; margin-top: 0; }
 }
 .logo span { color: var(--color-primario); }
 .logo { display: flex; align-items: center; }
-.logo img { height: 54px; width: auto; }
+.logo img { height: 48px; width: auto; }
 .hero__logo { width: min(420px, 80%); height: auto; margin: 0 auto 20px; filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2)); }
 
 .nav ul {
@@ -572,3 +572,5 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba
 }
 .about__photo--logo img { box-shadow: none; border-radius: 0; object-fit: contain; max-height: 380px; }
 .features li { color: var(--color-texto); }
+.about__photo img { max-height: 520px; object-position: center top; }
+.footer__lema { font-weight: 600; color: #b9e7b0; margin-top: 4px; }

@@ -1,6 +1,6 @@
 // ===== Configuración =====
 // Cambia este número por el WhatsApp real (código de país 504 + número, sin espacios ni signos)
-const WHATSAPP = '50400000000'; // PENDIENTE: número real de Del Rocío
+const WHATSAPP = '50497341010';
 const MENSAJE_BASE = 'Hola Del Rocío, quisiera hacer un pedido.';
 
 const linkWhatsApp = (texto) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
