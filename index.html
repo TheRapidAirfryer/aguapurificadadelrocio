@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agua Purificada Del Rocío | Pureza y frescura en cada gota</title>
+  <meta name="description" content="Agua Purificada Del Rocío: pureza y frescura en cada gota. Agua purificada con servicio a domicilio en Honduras.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Encabezado y navegación ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Agua Purificada Del Rocío, inicio">
+        <img src="logo-marca.png" alt="Agua Purificada Del Rocío" width="744" height="488">
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#pedidos">Cómo pedir</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Portada ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero__content">
+        <img class="hero__logo" src="logo.png" alt="Agua Purificada Del Rocío" width="744" height="570">
+        <p class="hero__tag">Pureza y frescura en cada gota</p>
+        <h1>Agua pura y fresca para tu hogar y tu negocio</h1>
+        <p>En Agua Purificada Del Rocío cuidamos cada gota con procesos de calidad para que tu familia tome agua segura todos los días.</p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--light js-whatsapp">Pedir por WhatsApp</a>
+          <a href="#productos" class="btn btn--outline">Ver productos</a>
+        </div>
+      </div>
+      <!-- Efectos de agua animados -->
+      <div class="hero__light" aria-hidden="true"></div>
+      <div class="hero__bubbles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <svg class="hero__waves" viewBox="0 24 150 28" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <path id="ola" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+        </defs>
+        <g class="olas">
+          <use href="#ola" x="48" y="0"></use>
+          <use href="#ola" x="48" y="3"></use>
+          <use href="#ola" x="48" y="5"></use>
+          <use href="#ola" x="48" y="7"></use>
+        </g>
+      </svg>
+    </section>
+
+    <!-- ===== Nosotros ===== -->
+    <section id="nosotros" class="section">
+      <div class="container two-cols">
+        <div>
+          <h2>Sobre Del Rocío</h2>
+          <p>Somos una purificadora hondureña dedicada a llevar agua pura y fresca a hogares, oficinas y negocios.</p>
+          <p>Nuestro proceso de purificación garantiza agua limpia, segura y con buen sabor, y nuestro servicio de entrega te la lleva hasta la puerta.</p>
+          <ul class="features">
+            <li>✔ Proceso de purificación por etapas</li>
+            <li>✔ Envases limpios y sellados</li>
+            <li>✔ Entrega a domicilio</li>
+          </ul>
+        </div>
+        <figure class="about__photo about__photo--logo">
+          <!-- Cambia por una foto de la planta cuando la tengas: <img src="planta.jpg" alt="..."> -->
+          <img src="logo.png" alt="Logo de Agua Purificada Del Rocío" width="744" height="570" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Productos ===== -->
+    <section id="productos" class="section section--alt">
+      <div class="container">
+        <h2 class="center">Nuestros productos</h2>
+        <p class="center subtitle">Elige la presentación que mejor se adapte a ti.</p>
+        <div class="products">
+          <article class="product" data-nombre="Botellón 5 galones" data-precio="0">
+            <div class="product__img">
+              <span class="product__badge">Más vendido</span>
+              <img src="producto-botellon.svg" alt="Botellón de 5 galones Del Rocío (18.9 litros)" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Botellón 5 galones</h3>
+              <p class="product__desc">18.9 litros de agua envasada. Ideal para el hogar y la oficina.</p>
+              <p class="product__price">L. 00.00</p>
+              <div class="product__actions">
+                <div class="qty">
+                  <button type="button" class="qty__btn" data-accion="menos" aria-label="Quitar uno">−</button>
+                  <input type="number" class="qty__input" value="1" min="1" max="99" aria-label="Cantidad">
+                  <button type="button" class="qty__btn" data-accion="mas" aria-label="Agregar uno">+</button>
+                </div>
+                <button type="button" class="btn product__add">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-nombre="Botella de agua" data-precio="0">
+            <div class="product__img">
+              <img src="producto-botella.svg" alt="Botella de agua purificada Del Rocío" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Botella de agua</h3>
+              <p class="product__desc">Agua purificada 100% pura, perfecta para llevar o para eventos.</p>
+              <p class="product__price">L. 00.00</p>
+              <div class="product__actions">
+                <div class="qty">
+                  <button type="button" class="qty__btn" data-accion="menos" aria-label="Quitar uno">−</button>
+                  <input type="number" class="qty__input" value="1" min="1" max="99" aria-label="Cantidad">
+                  <button type="button" class="qty__btn" data-accion="mas" aria-label="Agregar uno">+</button>
+                </div>
+                <button type="button" class="btn product__add">Agregar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product" data-nombre="Bolsa de agua" data-precio="0">
+            <div class="product__img">
+              <img src="producto-bolsa.svg" alt="Bolsa de agua purificada Del Rocío" loading="lazy">
+            </div>
+            <div class="product__body">
+              <h3>Bolsa de agua</h3>
+              <p class="product__desc">Práctica y económica, por unidad o por fardo.</p>
+              <p class="product__price">L. 00.00</p>
+              <div class="product__actions">
+                <div class="qty">
+                  <button type="button" class="qty__btn" data-accion="menos" aria-label="Quitar uno">−</button>
+                  <input type="number" class="qty__input" value="1" min="1" max="99" aria-label="Cantidad">
+                  <button type="button" class="qty__btn" data-accion="mas" aria-label="Agregar uno">+</button>
+                </div>
+                <button type="button" class="btn product__add">Agregar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo pedir ===== -->
+    <section id="pedidos" class="section">
+      <div class="container">
+        <h2 class="center">¿Cómo hacer tu pedido?</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">1</span>
+            <h3>Escríbenos</h3>
+            <p>Mándanos un mensaje por WhatsApp o llámanos.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <h3>Elige tu producto</h3>
+            <p>Dinos qué necesitas y la cantidad.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <h3>Recíbelo en casa</h3>
+            <p>Te lo llevamos hasta tu puerta.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="section section--alt">
+      <div class="container two-cols contact">
+        <div class="contact__info">
+          <p class="eyebrow">Contáctanos</p>
+          <h2>Estamos para servirte</h2>
+          <p class="contact__lead">¿Quieres hacer un pedido o tienes alguna pregunta? Escríbenos por WhatsApp o déjanos tu mensaje.</p>
+
+          <div class="contact-cards">
+            <a class="contact-card contact-card--wa js-whatsapp" href="#">
+              <span class="contact-card__icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.4 1.7 6.3L3 29l7.2-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.2 9.8 10 5 16 5s10.8 4.8 10.8 10.7S21.9 26.2 16 26.2zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.4z"/></svg></span>
+              <span class="contact-card__text">
+                <span class="contact-card__label">WhatsApp / Teléfono</span>
+                <span class="contact-card__value js-whatsapp-num">+504 0000-0000</span>
+              </span>
+            </a>
+
+            <a class="contact-card contact-card--wide" href="https://www.google.com/maps/search/?api=1&amp;query=Honduras" target="_blank" rel="noopener">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+              <span class="contact-card__text">
+                <span class="contact-card__label">Dirección</span>
+                <span class="contact-card__value">Honduras</span>
+              </span>
+            </a>
+
+
+            <!-- Instagram: descomentar cuando tengamos la cuenta
+            <a class="contact-card" href="https://www.instagram.com/USUARIO/" target="_blank" rel="noopener">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span>
+              <span class="contact-card__text">
+                <span class="contact-card__label">Instagram</span>
+                <span class="contact-card__value">@USUARIO</span>
+              </span>
+            </a>
+            -->
+
+            <div class="contact-card contact-card--wide">
+              <span class="contact-card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l3 2"/></svg></span>
+              <span class="contact-card__text">
+                <span class="contact-card__label">Horario</span>
+                <span class="contact-card__value">Lunes a sábado · 7:00 a.m. – 5:00 p.m.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form class="form form--card" id="contact-form" novalidate>
+          <h3 class="form__title">Haz tu pedido</h3>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="producto">Producto</label>
+          <select id="producto" name="producto">
+            <option>Botellón 5 galones</option>
+            <option>Botella de agua</option>
+            <option>Bolsa de agua</option>
+            <option>Otro / consulta</option>
+          </select>
+
+          <label for="mensaje">Mensaje (cantidad, dirección…)</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Enviar por WhatsApp</button>
+          <p class="form__status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="footer">
+    <div class="container">
+      <img class="footer__logo" src="logo.png" alt="Agua Purificada Del Rocío" width="744" height="570">
+      <p>&copy; <span id="year"></span> Agua Purificada Del Rocío. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Barra del pedido (aparece al agregar productos) -->
+  <div class="cart" id="cart" hidden>
+    <div class="cart__info">
+      <strong id="cart-count">0 productos</strong>
+      <span id="cart-items"></span>
+    </div>
+    <div class="cart__actions">
+      <button type="button" class="cart__clear" id="cart-clear">Vaciar</button>
+      <a href="#" class="btn cart__send" id="cart-send" target="_blank" rel="noopener">Enviar pedido</a>
+    </div>
+  </div>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="whatsapp-float js-whatsapp" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.4 1.7 6.3L3 29l7.2-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.3 1.1 1.1-4.2-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.6C5.2 9.8 10 5 16 5s10.8 4.8 10.8 10.7S21.9 26.2 16 26.2zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.4z"/></svg>
+  </a>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

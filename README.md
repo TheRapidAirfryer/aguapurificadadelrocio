@@ -1,0 +1,29 @@
+# Agua Purificada Del Rocío: sitio web
+
+Sitio web de Agua Purificada Del Rocío (agua purificada, Honduras), hecho con HTML, CSS y JavaScript sin frameworks.
+
+## Archivos
+- `index.html`: estructura y contenido
+- `styles.css`: estilos (los colores se cambian en `:root`)
+- `script.js`: menú móvil, animaciones y formulario que abre WhatsApp
+
+## Cómo correrlo
+Necesitas [Node.js](https://nodejs.org) (versión 18 o más nueva).
+
+```bash
+npm install
+npm run dev
+```
+
+Luego abre http://localhost:5173. Los cambios en los archivos se ven al instante.
+
+Otros comandos:
+- `npm run build`: genera la versión final en la carpeta `dist/`
+- `npm run preview`: muestra esa versión final
+
+## Pendiente
+- Precios reales de los productos
+- Dirección y horario
+- Número de WhatsApp, Instagram y fotos reales de productos y de la planta
+
+El número de WhatsApp se cambia en la constante `WHATSAPP` de `script.js`.
