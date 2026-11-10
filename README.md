@@ -24,6 +24,5 @@ Otros comandos:
 ## Pendiente
 - Precios reales de los productos
 - Dirección y horario
-- Fotos reales de los productos
 
 El número de WhatsApp se cambia en la constante `WHATSAPP` de `script.js`.
