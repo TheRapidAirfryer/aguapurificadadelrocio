@@ -501,14 +501,15 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba
 
 /* ===== Pie ===== */
 .footer {
-  background: #0a3a5e;
-  color: #e0f2fe;
+  background: #fff;
+  color: var(--color-suave);
+  border-top: 1px solid #e5e7eb;
   text-align: center;
   padding: 24px 0;
   font-size: 0.9rem;
 }
 .footer p { margin: 0; }
-.footer__logo { width: 140px; height: auto; margin: 0 auto 10px; }
+.footer__logo { width: 170px; height: auto; margin: 0 auto 10px; }
 
 /* ===== Botón flotante WhatsApp ===== */
 .whatsapp-float {
@@ -556,14 +557,10 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba
 /* ===== Del Rocío: logo sobre tarjeta blanca (el logo tiene texto azul) ===== */
 .hero { background: linear-gradient(160deg, var(--color-acento) 0%, #1f8f6a 45%, var(--color-primario) 100%); }
 .hero__logo {
-  width: min(340px, 78%);
-  background: #fff;
-  border-radius: 28px;
-  padding: 18px 22px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
-  filter: none;
+  width: min(380px, 80%);
+  /* Logo en blanco sobre el degradado */
+  filter: brightness(0) invert(1) drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
 }
-.footer__logo { background: #fff; border-radius: 16px; padding: 10px 14px; }
 .about__photo--logo {
   background: radial-gradient(circle at 50% 40%, #ffffff 0%, #e1f3e4 70%);
   border-radius: 18px;
@@ -573,4 +570,4 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba
 .about__photo--logo img { box-shadow: none; border-radius: 0; object-fit: contain; max-height: 380px; }
 .features li { color: var(--color-texto); }
 .about__photo img { max-height: 520px; object-position: center top; }
-.footer__lema { font-weight: 600; color: #b9e7b0; margin-top: 4px; }
+.footer__lema { font-weight: 600; color: var(--color-primario); margin-top: 4px !important; }
